@@ -145,8 +145,11 @@ void KMeans::KMeans::KMeansRun() {
         }
     }
     fStop=omp_get_wtime()-fStart;
-    std::cout<<"Iteration end average time (s):"<<average<<std::endl;
-    std::cout<<"Iteration total time (s):"<<fStop<<std::endl;
+    std::cout<<"--------------------------------------------------"<<std::endl;
+    std::cout<<"*  Iteration end average time (s): "<<average<<"  "<<std::endl;
+    std::cout<<"*  Iteration total time (s): "<<fStop<<"          "<<std::endl;
+    std::cout<<"--------------------------------------------------"<<std::endl;
+
 }
 
 const std::vector<std::vector<BasePoint::Point>> &KMeans::KMeans::getClusterData() {
