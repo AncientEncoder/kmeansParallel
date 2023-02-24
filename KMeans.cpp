@@ -60,10 +60,7 @@ void KMeans::KMeans::createClusters() {
         clusterData[point.center].push_back(point);
     }
 }
-/**
- * @todo if in need to parallel?
- * @return
- */
+
 std::vector<BasePoint::Point> KMeans::KMeans::updateCenter() {
     std::vector<BasePoint::Point> newCenter;
     BasePoint::Point paramPoint;
@@ -82,12 +79,7 @@ std::vector<BasePoint::Point> KMeans::KMeans::updateCenter() {
     }
     return newCenter;
 }
-/**
- * @todo in need to parallel??
- * @param center
- * @param newCenters
- * @return
- */
+
 bool KMeans::KMeans::hasCloseCenterBellowEpsilon(BasePoint::Point center, const std::vector<BasePoint::Point> &newCenters){
     bool belowEpsilon= false;
     for(const auto&newCenter:newCenters){
@@ -97,11 +89,7 @@ bool KMeans::KMeans::hasCloseCenterBellowEpsilon(BasePoint::Point center, const 
     }
     return belowEpsilon;
 }
-/**
- * @todo in need to parallel??
- * @param newCenters
- * @return
- */
+
 bool KMeans::KMeans::convergence(const std::vector<BasePoint::Point> &newCenters) {
     bool conv= true;
     for (int i = 0; i < center.size(); ++i) {
