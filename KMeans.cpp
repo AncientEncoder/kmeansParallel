@@ -43,7 +43,6 @@ void KMeans::KMeans::createClusters() {
     int closedCenterID;
     double minDistance;
     double distance;
-    //clusterData.clear();
 #pragma omp parallel for private(closedCenterID,minDistance,distance) shared(points) default(none)
     for (auto &point:points) {
         closedCenterID=0;
