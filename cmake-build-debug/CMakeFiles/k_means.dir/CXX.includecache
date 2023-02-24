@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CPP_Codes/k_means/KMeans.cpp
+KMeans.hpp
+E:/CPP_Codes/k_means/KMeans.hpp
+random
+-
+omp.h
+-
+
+E:/CPP_Codes/k_means/KMeans.hpp
+iostream
+-
+cmath
+-
+Point.hpp
+E:/CPP_Codes/k_means/Point.hpp
+vector
+-
+random
+-
+chrono
+-
+
+E:/CPP_Codes/k_means/Point.hpp
+
