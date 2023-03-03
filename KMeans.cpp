@@ -43,7 +43,9 @@ void KMeans::KMeans::createClusters() {
     int closedCenterID;
     double minDistance;
     double distance;
-#pragma omp parallel for
+//    omp_set_dynamic(0);
+//    omp_set_num_threads(16);
+#pragma omp parallel for private(closedCenterID,minDistance,distance) default(none)
     for (int i=0;i<points.size();i++) {
         closedCenterID=0;
         minDistance= euclidean_distance(points[i], center[0]);
@@ -117,7 +119,7 @@ void KMeans::KMeans::KMeansRun() {
         if (convergence(newCenters)){
             break;
         }
-        std::cout<<"Iteration: "<<i<<" th Center update"<<std::endl;
+        //std::cout<<"Iteration: "<<i<<" th Center update"<<std::endl;
         center.clear();
         center=newCenters;
         for (auto &clusterEle:clusterData){
@@ -125,7 +127,7 @@ void KMeans::KMeans::KMeansRun() {
         }
         createClusters();
         end=omp_get_wtime()-start;
-        std::cout<<"Iteration time (s):"<<end<<std::endl;
+        //std::cout<<"Iteration time (s):"<<end<<std::endl;
         if (i==0){
             average=end;
         } else{
