@@ -68,6 +68,7 @@ std::vector<BasePoint::Point> KMeans::KMeans::updateCenter() {
     BasePoint::Point paramPoint;
     for (int i = 0; i < clusterData.size(); ++i) {
         paramPoint.initToZero();
+//#pragma omp parallel for shared(paramPoint,i) default(none)
         for (int j = 0; j < clusterData[i].size(); ++j) {
             paramPoint.x+=clusterData[i][j].x;
             paramPoint.y+=clusterData[i][j].y;
@@ -94,6 +95,7 @@ bool KMeans::KMeans::hasCloseCenterBellowEpsilon(BasePoint::Point center, const 
 
 bool KMeans::KMeans::convergence(const std::vector<BasePoint::Point> &newCenters) {
     bool conv= true;
+//#pragma omp parallel for  shared(newCenters,conv) default(none)
     for (int i = 0; i < center.size(); ++i) {
         if(!hasCloseCenterBellowEpsilon(center[i], newCenters)){
             conv= false;
@@ -119,7 +121,7 @@ void KMeans::KMeans::KMeansRun() {
         if (convergence(newCenters)){
             break;
         }
-        //std::cout<<"Iteration: "<<i<<" th Center update"<<std::endl;
+        std::cout<<"Iteration: "<<i<<" th Center update"<<std::endl;
         center.clear();
         center=newCenters;
         for (auto &clusterEle:clusterData){
@@ -127,7 +129,7 @@ void KMeans::KMeans::KMeansRun() {
         }
         createClusters();
         end=omp_get_wtime()-start;
-        //std::cout<<"Iteration time (s):"<<end<<std::endl;
+        std::cout<<"Iteration time (s):"<<end<<std::endl;
         if (i==0){
             average=end;
         } else{
