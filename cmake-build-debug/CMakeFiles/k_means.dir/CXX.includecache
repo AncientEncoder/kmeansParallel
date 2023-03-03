@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+E:/CPP_Codes/k_means/IOController.hpp
+Point.hpp
+E:/CPP_Codes/k_means/Point.hpp
+iostream
+-
+vector
+-
+sstream
+-
+
 E:/CPP_Codes/k_means/KMeans.cpp
 KMeans.hpp
 E:/CPP_Codes/k_means/KMeans.hpp
@@ -29,4 +39,10 @@ chrono
 -
 
 E:/CPP_Codes/k_means/Point.hpp
+
+E:/CPP_Codes/k_means/main.cpp
+IOController.hpp
+E:/CPP_Codes/k_means/IOController.hpp
+KMeans.hpp
+E:/CPP_Codes/k_means/KMeans.hpp
 
