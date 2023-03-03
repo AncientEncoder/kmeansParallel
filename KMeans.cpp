@@ -89,7 +89,7 @@ bool KMeans::KMeans::hasCloseCenterBellowEpsilon(BasePoint::Point center, const 
     }
     return belowEpsilon;
 }
-
+//fix to lower version of cpp
 bool KMeans::KMeans::convergence(const std::vector<BasePoint::Point> &newCenters) {
     bool conv= true;
     for (int i = 0; i < center.size(); ++i) {
