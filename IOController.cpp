@@ -42,11 +42,11 @@ std::vector<BasePoint::Point> IOController::IOController::fileReader(const std::
 void IOController::IOController::fileWriter(const std::string &fileName, std::vector<std::vector<BasePoint::Point>> clusterData) {
     std::ofstream fileWrite;
     fileWrite.open(fileName,std::ios::out | std::ios::trunc);
+//    for (int i = 0; i < clusterData.size(); ++i) {
+//        std::cout<<"cluster "<<i<<" has "<<clusterData[i].size()<<" datas"<<std::endl;
+//    }
     for (int i = 0; i < clusterData.size(); ++i) {
-        std::cout<<"cluster "<<i<<" has "<<clusterData[i].size()<<" datas"<<std::endl;
-    }
-    for (int i = 0; i < clusterData.size(); ++i) {
-        std::cout<<"--------------------writing Center: "<<i<<"------------------------------"<<std::endl;
+        //std::cout<<"--------------------writing Center: "<<i<<"------------------------------"<<std::endl;
         //fileWrite<<"--------------------writing Center: "<<i<<"------------------------------"<<std::endl;
         for (const auto & j : clusterData[i]) {
             //fileWrite<<"x: "<<j.x<<" y: "<<j.y<<" z: "<<j.z<<" Center: "<<j.center<<std::endl;

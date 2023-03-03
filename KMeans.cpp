@@ -121,7 +121,7 @@ void KMeans::KMeans::KMeansRun() {
         if (convergence(newCenters)){
             break;
         }
-        std::cout<<"Iteration: "<<i<<" th Center update"<<std::endl;
+        //std::cout<<"Iteration: "<<i<<" th Center update"<<std::endl;
         center.clear();
         center=newCenters;
         for (auto &clusterEle:clusterData){
@@ -129,7 +129,7 @@ void KMeans::KMeans::KMeansRun() {
         }
         createClusters();
         end=omp_get_wtime()-start;
-        std::cout<<"Iteration time (s):"<<end<<std::endl;
+        //std::cout<<"Iteration time (s):"<<end<<std::endl;
         if (i==0){
             average=end;
         } else{
