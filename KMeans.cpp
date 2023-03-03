@@ -44,17 +44,17 @@ void KMeans::KMeans::createClusters() {
     double minDistance;
     double distance;
 #pragma omp parallel for private(closedCenterID,minDistance,distance) shared(points) default(none)
-    for (auto &point:points) {
+    for (int i=0;i<points.size();i++) {
         closedCenterID=0;
-        minDistance= euclidean_distance(point, center[0]);
+        minDistance= euclidean_distance(points[i], center[0]);
         for (int j = 0; j < clusters; ++j) {
-            distance= euclidean_distance(point,center[j]);
+            distance= euclidean_distance(points[i],center[j]);
             if (distance<minDistance){
                 minDistance=distance;
                 closedCenterID=j;
             }
         }
-        point.center=closedCenterID;
+        points[i].center=closedCenterID;
     }
     for (const auto&point:points){
         clusterData[point.center].push_back(point);
@@ -89,7 +89,7 @@ bool KMeans::KMeans::hasCloseCenterBellowEpsilon(BasePoint::Point center, const 
     }
     return belowEpsilon;
 }
-//fix to lower version of cpp
+
 bool KMeans::KMeans::convergence(const std::vector<BasePoint::Point> &newCenters) {
     bool conv= true;
     for (int i = 0; i < center.size(); ++i) {
