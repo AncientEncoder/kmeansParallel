@@ -43,7 +43,7 @@ void KMeans::KMeans::createClusters() {
     int closedCenterID;
     double minDistance;
     double distance;
-#pragma omp parallel for private(closedCenterID,minDistance,distance) shared(points) default(none)
+#pragma omp parallel for
     for (int i=0;i<points.size();i++) {
         closedCenterID=0;
         minDistance= euclidean_distance(points[i], center[0]);
