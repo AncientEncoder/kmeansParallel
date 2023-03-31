@@ -52,10 +52,10 @@ RM = "D:\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\CPP_Codes\k_means
+CMAKE_SOURCE_DIR = E:\k_meansParallel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\CPP_Codes\k_means\cmake-build-debug
+CMAKE_BINARY_DIR = E:\k_meansParallel\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/k_means.dir/depend.make
@@ -67,55 +67,55 @@ include CMakeFiles/k_means.dir/flags.make
 
 CMakeFiles/k_means.dir/KMeans.cpp.obj: CMakeFiles/k_means.dir/flags.make
 CMakeFiles/k_means.dir/KMeans.cpp.obj: ../KMeans.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CPP_Codes\k_means\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/k_means.dir/KMeans.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\k_means.dir\KMeans.cpp.obj -c E:\CPP_Codes\k_means\KMeans.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\k_meansParallel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/k_means.dir/KMeans.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\k_means.dir\KMeans.cpp.obj -c E:\k_meansParallel\KMeans.cpp
 
 CMakeFiles/k_means.dir/KMeans.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k_means.dir/KMeans.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CPP_Codes\k_means\KMeans.cpp > CMakeFiles\k_means.dir\KMeans.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\k_meansParallel\KMeans.cpp > CMakeFiles\k_means.dir\KMeans.cpp.i
 
 CMakeFiles/k_means.dir/KMeans.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k_means.dir/KMeans.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CPP_Codes\k_means\KMeans.cpp -o CMakeFiles\k_means.dir\KMeans.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\k_meansParallel\KMeans.cpp -o CMakeFiles\k_means.dir\KMeans.cpp.s
 
 CMakeFiles/k_means.dir/Point.cpp.obj: CMakeFiles/k_means.dir/flags.make
 CMakeFiles/k_means.dir/Point.cpp.obj: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CPP_Codes\k_means\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/k_means.dir/Point.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\k_means.dir\Point.cpp.obj -c E:\CPP_Codes\k_means\Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\k_meansParallel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/k_means.dir/Point.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\k_means.dir\Point.cpp.obj -c E:\k_meansParallel\Point.cpp
 
 CMakeFiles/k_means.dir/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k_means.dir/Point.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CPP_Codes\k_means\Point.cpp > CMakeFiles\k_means.dir\Point.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\k_meansParallel\Point.cpp > CMakeFiles\k_means.dir\Point.cpp.i
 
 CMakeFiles/k_means.dir/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k_means.dir/Point.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CPP_Codes\k_means\Point.cpp -o CMakeFiles\k_means.dir\Point.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\k_meansParallel\Point.cpp -o CMakeFiles\k_means.dir\Point.cpp.s
 
 CMakeFiles/k_means.dir/IOController.cpp.obj: CMakeFiles/k_means.dir/flags.make
 CMakeFiles/k_means.dir/IOController.cpp.obj: ../IOController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CPP_Codes\k_means\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/k_means.dir/IOController.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\k_means.dir\IOController.cpp.obj -c E:\CPP_Codes\k_means\IOController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\k_meansParallel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/k_means.dir/IOController.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\k_means.dir\IOController.cpp.obj -c E:\k_meansParallel\IOController.cpp
 
 CMakeFiles/k_means.dir/IOController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k_means.dir/IOController.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CPP_Codes\k_means\IOController.cpp > CMakeFiles\k_means.dir\IOController.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\k_meansParallel\IOController.cpp > CMakeFiles\k_means.dir\IOController.cpp.i
 
 CMakeFiles/k_means.dir/IOController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k_means.dir/IOController.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CPP_Codes\k_means\IOController.cpp -o CMakeFiles\k_means.dir\IOController.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\k_meansParallel\IOController.cpp -o CMakeFiles\k_means.dir\IOController.cpp.s
 
 CMakeFiles/k_means.dir/main.cpp.obj: CMakeFiles/k_means.dir/flags.make
 CMakeFiles/k_means.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CPP_Codes\k_means\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/k_means.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\k_means.dir\main.cpp.obj -c E:\CPP_Codes\k_means\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\k_meansParallel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/k_means.dir/main.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\k_means.dir\main.cpp.obj -c E:\k_meansParallel\main.cpp
 
 CMakeFiles/k_means.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k_means.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CPP_Codes\k_means\main.cpp > CMakeFiles\k_means.dir\main.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\k_meansParallel\main.cpp > CMakeFiles\k_means.dir\main.cpp.i
 
 CMakeFiles/k_means.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k_means.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CPP_Codes\k_means\main.cpp -o CMakeFiles\k_means.dir\main.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\k_meansParallel\main.cpp -o CMakeFiles\k_means.dir\main.cpp.s
 
 # Object files for target k_means
 k_means_OBJECTS = \
@@ -135,7 +135,7 @@ k_means.exe: CMakeFiles/k_means.dir/build.make
 k_means.exe: CMakeFiles/k_means.dir/linklibs.rsp
 k_means.exe: CMakeFiles/k_means.dir/objects1.rsp
 k_means.exe: CMakeFiles/k_means.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\CPP_Codes\k_means\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable k_means.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\k_meansParallel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable k_means.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\k_means.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -147,6 +147,6 @@ CMakeFiles/k_means.dir/clean:
 .PHONY : CMakeFiles/k_means.dir/clean
 
 CMakeFiles/k_means.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\CPP_Codes\k_means E:\CPP_Codes\k_means E:\CPP_Codes\k_means\cmake-build-debug E:\CPP_Codes\k_means\cmake-build-debug E:\CPP_Codes\k_means\cmake-build-debug\CMakeFiles\k_means.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\k_meansParallel E:\k_meansParallel E:\k_meansParallel\cmake-build-debug E:\k_meansParallel\cmake-build-debug E:\k_meansParallel\cmake-build-debug\CMakeFiles\k_means.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/k_means.dir/depend
 

@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/CPP_Codes/k_means/IOController.cpp" "E:/CPP_Codes/k_means/cmake-build-debug/CMakeFiles/k_means.dir/IOController.cpp.obj"
-  "E:/CPP_Codes/k_means/KMeans.cpp" "E:/CPP_Codes/k_means/cmake-build-debug/CMakeFiles/k_means.dir/KMeans.cpp.obj"
-  "E:/CPP_Codes/k_means/Point.cpp" "E:/CPP_Codes/k_means/cmake-build-debug/CMakeFiles/k_means.dir/Point.cpp.obj"
-  "E:/CPP_Codes/k_means/main.cpp" "E:/CPP_Codes/k_means/cmake-build-debug/CMakeFiles/k_means.dir/main.cpp.obj"
+  "E:/k_meansParallel/IOController.cpp" "E:/k_meansParallel/cmake-build-debug/CMakeFiles/k_means.dir/IOController.cpp.obj"
+  "E:/k_meansParallel/KMeans.cpp" "E:/k_meansParallel/cmake-build-debug/CMakeFiles/k_means.dir/KMeans.cpp.obj"
+  "E:/k_meansParallel/Point.cpp" "E:/k_meansParallel/cmake-build-debug/CMakeFiles/k_means.dir/Point.cpp.obj"
+  "E:/k_meansParallel/main.cpp" "E:/k_meansParallel/cmake-build-debug/CMakeFiles/k_means.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
